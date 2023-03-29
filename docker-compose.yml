@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  image_forwarder:
+    image: image_forwarder_wechat:latest
+    container_name: image_forwarder
+    ports:
+      - "34567:34567"
+    network_mode: bridge
+    restart: unless-stopped
+    volumes:
+      - "./config.ini:/app/config.ini"

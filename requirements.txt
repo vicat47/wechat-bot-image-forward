@@ -1,0 +1,5 @@
+aiohttp
+aiofiles
+smbprotocol
+webdav4[fsspec]
+fsspec
